@@ -1,0 +1,15 @@
+自行搭建 WIN10 + QT5 + msys 開發環境 方便日後編譯GSL、OpenCV、DLIB
+
+資料來源: https://www.youtube.com/watch?v=hUnBKRrJlG8
+
+下載資源:
+https://download.qt.io/archive/qt/5.12/  [5.12.11]
+https://sourceforge.net/projects/mingwbuilds/files/external-binary-packages/ [msys+7za+wget+svn+git+mercurial+cvs-rev13.7z]
+
+
+問題&解決
+	環境搭建完成後，會發現一個現象:
+		01.那就是MinGW_32_bit的編譯出來的程式可以直接被執行
+		02.但是MinGW_32_bit和MSVC2015_64bit的編譯出來的程式除了不可直接執行，也不會像以前一樣會提醒缺少那些DLL
+	解決方法:
+		利用 ldd 來偵測32版本的程式進而取得所有相依檔案的規則

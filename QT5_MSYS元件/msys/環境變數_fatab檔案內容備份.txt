@@ -1,0 +1,8 @@
+個人/系統 的 path都要加入
+C:\Qt\Qt5.12.11\5.12.11\mingw73_64\bin
+C:\Qt\Qt5.12.11\Tools\mingw730_64\bin
+
+----
+
+fatab檔案
+C:/Qt/Qt5.12.11/Tools/mingw53_32 /mingw
